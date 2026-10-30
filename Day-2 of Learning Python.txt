@@ -1,0 +1,194 @@
+Day-2 of  Python Programs
+
+1.Identify the Nature of a Number
+
+n = int(input())
+
+if n > 0:
+    print("POSITIVE")
+elif n < 0:
+    print("NEGATIVE")
+else:
+    print("ZERO")
+
+2.Explore Math Functions
+
+import math
+a = float(input())
+b = int(input())
+c = int(input())
+d = int(input())
+print(math.floor(a))
+print(math.ceil(a))
+print(round(a))
+print(int(math.sqrt(b)))
+print(c ** d)
+
+3.Smallest of Four Numbers
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+print(min(a, b, c, d))
+
+4.Truncate to Two Decimal Places
+
+import math
+a=float(input())
+a=a*100
+a=math.trunc(a)
+print(a/100)
+
+5.Find Second Maximum Number
+
+a = int(input())
+b = int(input())
+c = int(input())
+if a==b==c:
+    print("No second max")
+elif a>b and a<c or a>c and a<b:
+  print(a)
+elif b<a and b>c or b>a and b<c:
+  print(b)
+else:
+  print(c)
+
+6.Triangle Angle Validation
+
+a=int(input())
+b=int(input())
+c=int(input())
+if a>=0 and b>=0 and c>=0 and a+b+c==180:
+  if a+b >c and b+c >a and a+c >b:
+    print("VALID")
+    if a==b==c:
+      print("EQUILATERAL")
+    elif a==b or b==c or a==c:
+      print("ISOSCELES")
+    else:
+      print("SCALENE")
+  else:
+    print("NOT VALID")
+else:
+  print("NOT VALID")
+
+7.Number to Word
+
+n = int(input())
+words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+print(words[n])
+
+8.Vowel or Consonant
+
+ch = input()
+if ch.lower() in "aeiou":
+    print("vowel")
+else:
+    print("consonant")
+
+9.Leap Year Checker
+
+year = int(input())
+
+if year % 400 == 0:
+    print("yes")
+elif year % 100 == 0:
+    print("no")
+elif year % 4 == 0:
+    print("yes")
+else:
+    print("no")
+
+10.Fun Grade Calculator
+
+m1 = int(input())
+m2 = int(input())
+m3 = int(input())
+m4 = int(input())
+m5 = int(input())
+
+avg = (m1 + m2 + m3 + m4 + m5) / 5
+
+if avg >= 90:
+    print("Excellent!")
+elif avg >= 80:
+    print("Great Job!")
+elif avg >= 70:
+    print("Good Effort!")
+elif avg >= 50:
+    print("Keep Trying!")
+else:
+    print("Better Luck Next Time!")
+
+11.Train Berth Type Finder
+
+a=int(input())
+b=a%8 
+match b:
+  case 1:
+    print("LB")
+  case 2:
+    print("MB")
+  case 3:
+    print("UB")
+  case 4:
+    print("LB")
+  case 5:
+    print("MB")
+  case 6:
+    print("UB")
+  case 7:
+    print("SL")
+  case _:
+    print("SU")
+  
+12.Thala vs Thalapathy Game
+
+n = int(input())
+
+if n % 3 == 0 and n % 5 == 0:
+    print("ThalaThalapathy")
+elif n % 3 == 0:
+    print("Thala")
+elif n % 5 == 0:
+    print("Thalapathy")
+else:
+    print(n)
+
+13. Train Fare Calculator
+
+age = int(input())
+distance = int(input())
+fare = distance * 5
+if age < 12:
+    fare = fare * 0.5
+elif age >= 60:
+    fare = fare * 0.75
+
+print(int(fare))
+
+14.Average Marks Calculator
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+e = int(input())
+
+avg = (a + b + c + d + e) / 5
+
+if avg == int(avg):
+    print(int(avg))
+else:
+    print(f"{avg:.2f}")
+
+15.Fun Character Case Converter
+
+ch = input()
+if ch.islower() and ch.isalpha():
+  print(ch.upper())
+elif ch.isupper() and ch.isalpha():
+    print(ch.lower())
+else:
+    print("abcd theriyatha?")
