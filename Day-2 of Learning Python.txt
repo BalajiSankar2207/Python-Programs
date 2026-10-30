@@ -1,4 +1,4 @@
-Day-2 of  Python Programs
+Conditional statements challenge:
 
 1.Identify the Nature of a Number
 
