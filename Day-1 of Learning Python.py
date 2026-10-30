@@ -1,4 +1,4 @@
-dDAY-1 OF PYTHON  PROGRAMS
+BASICS OF PYTHON  PROGRAMS
 
 1.Input and Output Practice:
 
